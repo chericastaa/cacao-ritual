@@ -50,4 +50,3 @@ Secundario `#7b1d2e` (bordo vino)
 Acento `#c9962a` (dorado cálido)
 Fondo claro `#f7f0e8` (crema)
 
-<img src="img/hero-home.jpg" alt="Muestra del sitio" width="600">

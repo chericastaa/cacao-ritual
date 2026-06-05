@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto | Cacao Ritual</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>&#x2615;</text></svg>">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- ==================== NAVBAR ==================== -->
+    <header>
+        <nav class="navbar">
+            <div class="navbar__logo">
+                <a href="index.html">Cacao Ritual</a>
+            </div>
+            <input type="checkbox" id="nav-toggle" class="navbar__toggle">
+            <label for="nav-toggle" class="navbar__hamburger" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            <ul class="navbar__menu">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="tienda.html">Nuestra Tienda</a></li>
+                <li><a href="tutoriales.html">Tutoriales</a></li>
+                <li><a href="menu-tienda.html">Nuestro Menú</a></li>
+                <li><a href="franquicias.html">Franquicias</a></li>
+                <li><a href="trabaja-en-tdc.html">Trabajá con Nosotros</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+            <div class="navbar__iconos">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <i class="fa-solid fa-bag-shopping"></i>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- ==================== HERO INTERNO ==================== -->
+        <section class="hero-interno hero-interno--contacto">
+            <h1>Contacto</h1>
+            <p>Escribinos, siempre respondemos</p>
+        </section>
+
+        <!-- ==================== CONTACTO ==================== -->
+        <section class="seccion seccion--crema">
+            <div class="contacto__contenido">
+
+                <div class="contacto__info">
+                    <h2>Hablemos</h2>
+                    <div class="separador separador--interno"></div>
+                    <div class="contacto__info-item">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <div>
+                            <h4>Tienda principal</h4>
+                            <p>Thames 1650, Palermo<br>Buenos Aires, Argentina</p>
+                        </div>
+                    </div>
+                    <div class="contacto__info-item">
+                        <i class="fa-regular fa-clock"></i>
+                        <div>
+                            <h4>Horarios</h4>
+                            <p>Lunes a viernes: 8:00 a 20:00<br>Sábados: 9:00 a 18:00<br>Domingos: 10:00 a 16:00</p>
+                        </div>
+                    </div>
+                    <div class="contacto__info-item">
+                        <i class="fa-solid fa-phone"></i>
+                        <div>
+                            <h4>Teléfono / WhatsApp</h4>
+                            <p><a href="tel:+5491150001234">+54 9 11 5000-1234</a></p>
+                        </div>
+                    </div>
+                    <div class="contacto__info-item">
+                        <i class="fa-regular fa-envelope"></i>
+                        <div>
+                            <h4>Correo electrónico</h4>
+                            <p><a href="mailto:hola@cacaoritual.com.ar">hola@cacaoritual.com.ar</a></p>
+                        </div>
+                    </div>
+                    <div class="contacto__info-item">
+                        <i class="fa-brands fa-instagram"></i>
+                        <div>
+                            <h4>Instagram</h4>
+                            <p><a href="#">@cacaoritual.ar</a></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contacto__formulario">
+                    <h2>Envianos un mensaje</h2>
+                    <div class="separador separador--interno"></div>
+                    <form class="formulario" action="https://formsubmit.co/chericastaneda750@gmail.com" method="POST">
+                <input type="hidden" name="_subject" value="Contacto - Cacao Ritual">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_next" value="https://formsubmit.co/sent">
+                        <div class="formulario__fila">
+                            <div class="formulario__grupo">
+                                <label for="nombre">Nombre</label>
+                                <input type="text" id="nombre" name="nombre" placeholder="Tu nombre">
+                            </div>
+                            <div class="formulario__grupo">
+                                <label for="apellido">Apellido</label>
+                                <input type="text" id="apellido" name="apellido" placeholder="Tu apellido">
+                            </div>
+                        </div>
+                        <div class="formulario__grupo">
+                            <label for="email">Correo electrónico</label>
+                            <input type="email" id="email" name="email" placeholder="tu@correo.com">
+                        </div>
+                        <div class="formulario__grupo">
+                            <label for="asunto">Asunto</label>
+                            <select id="asunto" name="asunto">
+                                <option value="">¿Sobre qué nos escribís?</option>
+                                <option value="productos">Consulta sobre productos</option>
+                                <option value="pedido">Problema con un pedido</option>
+                                <option value="franquicias">Información sobre franquicias</option>
+                                <option value="trabajo">Trabajar en Cacao Ritual</option>
+                                <option value="prensa">Prensa / colaboraciones</option>
+                                <option value="otro">Otro</option>
+                            </select>
+                        </div>
+                        <div class="formulario__grupo">
+                            <label for="mensaje">Mensaje</label>
+                            <textarea id="mensaje" name="mensaje" placeholder="Escribinos lo que necesitás, respondemos en el día..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn--oscuro">Enviar mensaje</button>
+                    </form>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ==================== MAPA (placeholder) ==================== -->
+        <section class="mapa-seccion">
+            <div class="mapa-placeholder">
+                <i class="fa-solid fa-map-location-dot"></i>
+                <p>Thames 1650, Palermo · Buenos Aires</p>
+            </div>
+        </section>
+
+        <!-- ==================== PREGUNTAS FRECUENTES ==================== -->
+        <section class="seccion seccion--crema">
+            <div class="seccion__encabezado">
+                <h2>Preguntas frecuentes</h2>
+                <div class="separador"></div>
+                <p>Lo que más nos preguntan antes de escribirnos.</p>
+            </div>
+            <div class="faq-lista">
+                <div class="faq-item">
+                    <h4>¿Hacen envíos a todo el país?</h4>
+                    <p>Sí, enviamos por correo y por Andreani a todo Argentina. Los pedidos se despachan dentro de las 48 horas hábiles. El costo de envío se calcula al momento del checkout.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>¿El cacao tiene cafeína?</h4>
+                    <p>El cacao contiene teobromina, que es diferente a la cafeína. El efecto es más suave, más largo y sin el pico de ansiedad. Muchas personas que no pueden tomar café por la tarde sí toman cacao sin problemas.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>¿Es apto para celíacos y veganos?</h4>
+                    <p>Todos nuestros productos puros (pasta, nibs, polvo) son naturalmente libres de gluten y de origen vegetal. Para los blends especiados verificamos que los ingredientes adicionales también lo sean.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>¿Puedo visitar la tienda sin comprar nada?</h4>
+                    <p>Claro que sí. La tienda es un espacio abierto. Podés venir a tomar un cacao en la barra, ver los productos y preguntar todo lo que quieras sin ninguna presión.</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="footer">
+        <div class="footer__contenido">
+            <div class="footer__columna">
+                <span class="footer__logo">Cacao Ritual</span>
+                <p class="footer__descripcion">Cacao ceremonial de origen único, seleccionado con intención. Desde los productores hasta tu taza, con respeto y trazabilidad.</p>
+                <div class="footer__social">
+                    <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="#" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+                </div>
+            </div>
+            <div class="footer__columna">
+                <h4>Navegación</h4>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="tienda.html">Nuestra Tienda</a></li>
+                    <li><a href="tutoriales.html">Tutoriales</a></li>
+                    <li><a href="menu-tienda.html">Nuestro Menú</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="footer__columna">
+                <h4>La empresa</h4>
+                <ul>
+                    <li><a href="franquicias.html">Franquicias</a></li>
+                    <li><a href="trabaja-en-tdc.html">Trabajá con Nosotros</a></li>
+                    <li><a href="#">Términos y condiciones</a></li>
+                    <li><a href="#">Política de privacidad</a></li>
+                </ul>
+            </div>
+            <div class="footer__columna">
+                <h4>Contacto</h4>
+                <ul>
+                    <li><a href="mailto:hola@cacaoritual.com.ar"><i class="fa-regular fa-envelope"></i> hola@cacaoritual.com.ar</a></li>
+                    <li><a href="tel:+5491150001234"><i class="fa-solid fa-phone"></i> +54 9 11 5000-1234</a></li>
+                    <li><a href="#"><i class="fa-solid fa-location-dot"></i> Buenos Aires, Argentina</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer__inferior">
+            <p>&copy; 2026 Cacao Ritual. Todos los derechos reservados.</p>
+            <p>Hecho con <i class="fa-solid fa-heart icono-acento"></i> y mucho cacao</p>
+        </div>
+    </footer>
+
+</body>
+</html>

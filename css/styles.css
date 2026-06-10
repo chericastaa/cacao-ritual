@@ -1,4 +1,4 @@
-/*///////////////// FONDOS DE HERO POR PÁGINA //////////////////*/
+/* imagenes de fondo segun la pagina */
 
 .hero--home           { background-image: url('../img/hero-home.jpg'); }
 .hero-interno--tienda { background-image: url('../img/hero-tienda.jpg'); }
@@ -10,7 +10,7 @@
 
 .icono-acento { color: var(--color-acento); }
 
-/*///////////////// AJUSTES GENERALES //////////////////*/
+/* reset y config general */
 
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Raleway:wght@300;400;500;600&display=swap');
 
@@ -46,7 +46,7 @@ img {
     display: block;
 }
 
-/*__________________ TIPOGRAFÍA __________________________*/
+/* fuentes */
 
 h1, h2, h3, h4 {
     font-family: var(--fuente-titulo);
@@ -58,7 +58,7 @@ h2 { font-size: 2.2rem; }
 h3 { font-size: 1.5rem; }
 h4 { font-size: 1.1rem; }
 
-/*__________________ LINKS __________________________*/
+/* links */
 
 a:link,
 a:visited {
@@ -75,7 +75,7 @@ a:active {
     color: var(--color-secundario);
 }
 
-/*__________________ BOTONES __________________________*/
+/* botones */
 
 .btn {
     display: inline-block;
@@ -90,7 +90,7 @@ a:active {
     transition: var(--transicion);
 }
 
-/* Doble clase para ganar especificidad sobre a:link (0,2,0 > 0,1,1) */
+/* doble clase para que tenga mas prioridad que el estilo del link */
 .btn.btn--acento {
     background-color: var(--color-acento);
     color: var(--color-primario);
@@ -122,9 +122,9 @@ a:active {
     color: var(--color-primario);
 }
 
-/*__________________NAV____________________________*/
+/* navbar */
 
-/* Hamburger - solo visible en mobile */
+/* menu hamburguesa, solo se ve en celular */
 .navbar__toggle {
     display: none;
 }
@@ -222,7 +222,7 @@ a:active {
     color: var(--color-acento);
 }
 
-/*__________________HERO PRINCIPAL____________________________*/
+/* hero de la home */
 
 .hero {
     width: 100%;
@@ -272,7 +272,7 @@ a:active {
     justify-content: center;
 }
 
-/*__________________HERO INTERNO (páginas internas)____________________________*/
+/* hero de las otras paginas */
 
 .hero-interno {
     width: 100%;
@@ -312,7 +312,7 @@ a:active {
     font-weight: 300;
 }
 
-/*__________________SECCIONES GENERALES____________________________*/
+/* secciones */
 
 .seccion {
     padding: 80px 5%;
@@ -363,7 +363,7 @@ a:active {
     margin: 14px auto;
 }
 
-/*__________________TARJETAS DE PRODUCTO____________________________*/
+/* tarjetas de producto */
 
 .productos__grid {
     display: flex;
@@ -432,7 +432,7 @@ a:active {
     font-weight: 600;
 }
 
-/*__________________SECCIÓN SOBRE NOSOTROS____________________________*/
+/* seccion nosotros */
 
 .sobre-nosotros {
     display: flex;
@@ -469,7 +469,7 @@ a:active {
     margin-top: 10px;
 }
 
-/*__________________TARJETAS DE TUTORIAL____________________________*/
+/* tarjetas de tutoriales */
 
 .tutoriales__grid {
     display: flex;
@@ -550,7 +550,7 @@ a:active {
     color: var(--color-acento);
 }
 
-/*__________________MENÚ DE LA TIENDA____________________________*/
+/* menu de la tienda */
 
 .menu__contenido {
     display: flex;
@@ -607,7 +607,7 @@ a:active {
     margin-left: 20px;
 }
 
-/*__________________FORMULARIOS____________________________*/
+/* formularios */
 
 .formulario {
     max-width: 700px;
@@ -663,7 +663,7 @@ a:active {
     flex: 1;
 }
 
-/*__________________BANNER CTA____________________________*/
+/* banner de llamada a la accion */
 
 .banner-cta {
     padding: 80px 5%;
@@ -684,7 +684,7 @@ a:active {
     font-size: 0.95rem;
 }
 
-/*__________________NEWSLETTER____________________________*/
+/* newsletter */
 
 .newsletter {
     padding: 65px 5%;
@@ -741,7 +741,7 @@ a:active {
     color: var(--color-primario);
 }
 
-/*__________________FOOTER____________________________*/
+/* footer */
 
 .footer {
     background-color: var(--color-primario);
@@ -839,7 +839,7 @@ a:active {
     color: rgba(237, 224, 208, 0.4);
 }
 
-/*__________________TRABAJÁ CON NOSOTROS____________________________*/
+/* trabaja con nosotros */
 
 .beneficios__grid {
     display: flex;
@@ -880,7 +880,7 @@ a:active {
     line-height: 1.6;
 }
 
-/*__________________FRANQUICIAS____________________________*/
+/* franquicias */
 
 .franquicias__intro {
     display: flex;
@@ -936,7 +936,7 @@ a:active {
     letter-spacing: 1px;
 }
 
-/*__________________SEPARADOR INTERNO____________________________*/
+/* separador */
 
 .separador--interno {
     width: 55px;
@@ -945,7 +945,7 @@ a:active {
     margin: 15px 0 30px;
 }
 
-/*__________________MAPA____________________________*/
+/* mapa */
 
 .mapa-seccion {
     width: 100%;
@@ -972,7 +972,7 @@ a:active {
     font-size: 1rem;
 }
 
-/*__________________CONTACTO____________________________*/
+/* contacto */
 
 .contacto__contenido {
     display: flex;
@@ -1015,7 +1015,7 @@ a:active {
     flex: 1;
 }
 
-/*__________________PUESTOS DE TRABAJO____________________________*/
+/* puestos de trabajo */
 
 .puestos-lista {
     display: flex;
@@ -1048,7 +1048,7 @@ a:active {
     margin-bottom: 5px;
 }
 
-/* Combinador descendente: div p para el subtítulo del puesto */
+/* subtitulo del puesto */
 .puesto-item__info p {
     font-size: 0.82rem;
     color: var(--color-acento);
@@ -1061,14 +1061,14 @@ a:active {
     flex: 1;
 }
 
-/* Combinador directo: div > p para el detalle del puesto */
+/* descripcion del puesto */
 .puesto-item__detalle > p {
     font-size: 0.9rem;
     color: #7a5c42;
     line-height: 1.6;
 }
 
-/*__________________PREGUNTAS FRECUENTES____________________________*/
+/* preguntas frecuentes */
 
 .faq-lista {
     display: flex;
@@ -1089,14 +1089,14 @@ a:active {
     color: var(--color-primario);
 }
 
-/* Combinador descendente: div p en faq */
+/* respuesta de cada pregunta */
 .faq-item p {
     font-size: 0.9rem;
     color: #7a5c42;
     line-height: 1.7;
 }
 
-/*///////////////// RESPONSIVIDAD //////////////////*/
+/* responsive */
 
 /* Tablet horizontal */
 @media (max-width: 1080px) {
@@ -1115,7 +1115,7 @@ a:active {
     h1 { font-size: 2.2rem; }
     h2 { font-size: 1.8rem; }
 
-    /* Hamburger: se muestra el botón, se oculta el menú por defecto */
+    /* hamburger visible, menu oculto */
     .navbar__hamburger { display: flex; }
     .navbar__menu {
         display: none;
@@ -1129,7 +1129,7 @@ a:active {
         gap: 0;
         box-shadow: 0 8px 20px rgba(0,0,0,0.4);
     }
-    /* Cuando el checkbox está activo, muestra el menú */
+    /* cuando se clickea el hamburger */
     .navbar__toggle:checked ~ .navbar__menu {
         display: flex;
     }

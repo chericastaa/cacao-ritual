@@ -1,0 +1,234 @@
+/* ───── Layout principal ───── */
+.locales-layout {
+    display: flex;
+    height: calc(100vh - 70px);
+    overflow: hidden;
+}
+
+/* ───── Panel lateral ───── */
+.locales-panel {
+    width: 300px;
+    min-width: 300px;
+    background-color: var(--color-blanco);
+    border-right: 1px solid var(--color-crema);
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+}
+
+.locales-panel__header {
+    padding: 20px 20px 0;
+}
+
+/* Barra de búsqueda */
+.locales-busqueda {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 16px;
+}
+
+.locales-busqueda__input-wrap {
+    position: relative;
+    flex: 1;
+}
+
+.locales-busqueda__input-wrap input {
+    width: 100%;
+    padding: 10px 14px 10px 14px;
+    border: 1px solid var(--color-crema);
+    background-color: var(--color-claro);
+    font-family: var(--fuente-cuerpo);
+    font-size: 0.85rem;
+    color: var(--color-texto);
+    outline: none;
+    transition: var(--transicion);
+}
+
+.locales-busqueda__input-wrap input:focus {
+    border-color: var(--color-acento);
+}
+
+.locales-busqueda__input-wrap input::placeholder {
+    color: #b0967c;
+}
+
+.locales-busqueda__icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #b0967c;
+    font-size: 0.8rem;
+}
+
+.locales-busqueda__gps {
+    width: 38px;
+    height: 38px;
+    border: 1px solid var(--color-crema);
+    background-color: var(--color-claro);
+    color: var(--color-texto);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: var(--transicion);
+    flex-shrink: 0;
+}
+
+.locales-busqueda__gps:hover {
+    background-color: var(--color-acento);
+    color: var(--color-primario);
+    border-color: var(--color-acento);
+}
+
+/* Filtro de país */
+.locales-filtro {
+    padding: 16px 20px;
+    border-bottom: 1px solid var(--color-crema);
+}
+
+.locales-filtro__titulo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 0.78rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--color-texto);
+    margin-bottom: 12px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.locales-filtro__titulo i {
+    font-size: 0.7rem;
+    color: #b0967c;
+    transition: var(--transicion);
+}
+
+.locales-filtro__opciones {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.locales-filtro__opcion {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    font-size: 0.88rem;
+    color: var(--color-texto);
+}
+
+.locales-filtro__opcion input[type="radio"] {
+    accent-color: var(--color-acento);
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+}
+
+/* Lista de locales */
+.locales-lista {
+    padding: 16px 20px;
+    flex: 1;
+}
+
+.locales-lista__titulo {
+    font-size: 1.1rem;
+    font-family: var(--fuente-titulo);
+    color: var(--color-acento);
+    margin-bottom: 16px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid var(--color-crema);
+}
+
+.local-card {
+    padding: 14px 0;
+    border-bottom: 1px solid var(--color-crema);
+    cursor: pointer;
+    transition: var(--transicion);
+}
+
+.local-card:last-child {
+    border-bottom: none;
+}
+
+.local-card:hover .local-card__nombre {
+    color: var(--color-acento);
+}
+
+.local-card__nombre {
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: var(--color-primario);
+    margin-bottom: 4px;
+    transition: var(--transicion);
+}
+
+.local-card__direccion {
+    font-size: 0.8rem;
+    color: #7a5c42;
+    margin-bottom: 6px;
+    line-height: 1.4;
+}
+
+.local-card__meta {
+    display: flex;
+    gap: 12px;
+    font-size: 0.75rem;
+    color: #a07858;
+}
+
+.local-card__meta i {
+    color: var(--color-acento);
+    margin-right: 3px;
+}
+
+.local-card__badge {
+    display: inline-block;
+    padding: 2px 8px;
+    background-color: var(--color-acento);
+    color: var(--color-primario);
+    font-size: 0.68rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 5px;
+}
+
+/* ───── Mapa ───── */
+.locales-mapa {
+    flex: 1;
+    position: relative;
+}
+
+.locales-mapa iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+    display: block;
+}
+
+/* ───── Responsive ───── */
+@media (max-width: 768px) {
+    .locales-layout {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .locales-panel {
+        width: 100%;
+        min-width: unset;
+        height: auto;
+        max-height: 55vh;
+        border-right: none;
+        border-bottom: 1px solid var(--color-crema);
+    }
+
+    .locales-mapa {
+        height: 50vh;
+    }
+}

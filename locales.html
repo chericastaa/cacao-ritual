@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Locales | Cacao Ritual</title>
+    <meta name="description"
+        content="Encontrá el local de Cacao Ritual más cercano a vos. Presencia en Argentina, España y Uruguay.">
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>&#x2615;</text></svg>">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="css/locales.css">
+</head>
+
+<body>
+
+    <!-- ==================== NAVBAR ==================== -->
+    <header>
+        <nav class="navbar">
+            <div class="navbar__logo">
+                <a href="index.html">Cacao Ritual</a>
+            </div>
+            <input type="checkbox" id="nav-toggle" class="navbar__toggle">
+            <label for="nav-toggle" class="navbar__hamburger" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            <ul class="navbar__menu">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="tienda.html">Nuestra Tienda</a></li>
+                <li><a href="tutoriales.html">Tutoriales</a></li>
+                <li><a href="locales.html">Locales</a></li>
+                <li><a href="menu-tienda.html">Nuestro Menú</a></li>
+                <li><a href="franquicias.html">Franquicias</a></li>
+                <li><a href="trabaja-en-tdc.html">Trabajá con Nosotros</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+            <div class="navbar__iconos">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <i class="fa-solid fa-bag-shopping"></i>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="locales-layout">
+
+            <!-- ── Panel lateral ── -->
+            <aside class="locales-panel">
+                <div class="locales-panel__header">
+                    <!-- Búsqueda -->
+                    <div class="locales-busqueda">
+                        <div class="locales-busqueda__input-wrap">
+                            <input type="text" id="buscar-local" placeholder="Buscar locales">
+                            <i class="fa-solid fa-magnifying-glass locales-busqueda__icon"></i>
+                        </div>
+                        <button class="locales-busqueda__gps" title="Usar mi ubicación" id="btn-gps">
+                            <i class="fa-solid fa-crosshairs"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Filtro por país -->
+                <div class="locales-filtro">
+                    <div class="locales-filtro__titulo" id="toggle-filtro">
+                        País <i class="fa-solid fa-chevron-up" id="filtro-chevron"></i>
+                    </div>
+                    <div class="locales-filtro__opciones" id="filtro-opciones">
+                        <label class="locales-filtro__opcion">
+                            <input type="radio" name="pais" value="todos" checked> Todos los países
+                        </label>
+                        <label class="locales-filtro__opcion">
+                            <input type="radio" name="pais" value="argentina"> Argentina
+                        </label>
+                        <label class="locales-filtro__opcion">
+                            <input type="radio" name="pais" value="espana"> España
+                        </label>
+                        <label class="locales-filtro__opcion">
+                            <input type="radio" name="pais" value="uruguay"> Uruguay
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Lista de locales -->
+                <div class="locales-lista">
+                    <div class="locales-lista__titulo">Locales</div>
+
+                    <!-- Argentina -->
+                    <div class="local-card" data-pais="argentina" data-lat="-34.603722" data-lng="-58.381592" data-map-src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.5324922469053!2d-58.43771192312436!3d-34.59069415681258!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb58a3320fa1b%3A0x5e2f656e55ccef2c!2sThames%2C%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1781218664021!5m2!1ses!2sar">
+                        <span class="local-card__badge">Argentina</span>
+                        <div class="local-card__nombre">Cacao Ritual · Palermo</div>
+                        <div class="local-card__direccion">
+                            <i class="fa-solid fa-location-dot"></i> Thames 1640, C1414 CABA
+                        </div>
+                        <div class="local-card__meta">
+                            <span><i class="fa-regular fa-clock"></i> Lun–Vie 9–20h</span>
+                            <span><i class="fa-solid fa-phone"></i> 11 4832-0011</span>
+                        </div>
+                    </div>
+
+                    <div class="local-card" data-pais="argentina" data-lat="-34.921019" data-lng="-57.954432" data-map-src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3271.6953884031177!2d-57.95518200888773!3d-34.91409310392869!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a2e639fff8617b%3A0x376bedee30505445!2sAv.%207%20850%2C%20B1904AIH%20La%20Plata%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1781218950038!5m2!1ses!2sar">
+                        <span class="local-card__badge">Argentina</span>
+                        <div class="local-card__nombre">Cacao Ritual · La Plata</div>
+                        <div class="local-card__direccion">
+                            <i class="fa-solid fa-location-dot"></i> Calle 7 N°850, La Plata, Buenos Aires
+                        </div>
+                        <div class="local-card__meta">
+                            <span><i class="fa-regular fa-clock"></i> Lun–Sáb 10–19h</span>
+                            <span><i class="fa-solid fa-phone"></i> 221 453-9900</span>
+                        </div>
+                    </div>
+
+                    <div class="local-card" data-pais="argentina" data-lat="-31.416668" data-lng="-64.183334" data-map-src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3404.6391174646374!2d-64.1896986232309!3d-31.42406759662478!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432a28f64e940a9%3A0x14cf0867e673fadc!2sAv.%20Hip%C3%B3lito%20Yrigoyen%20350%2C%20X2587%20Inriville%2C%20C%C3%B3rdoba!5e0!3m2!1ses!2sar!4v1781219768195!5m2!1ses!2sar">
+                        <span class="local-card__badge">Argentina</span>
+                        <div class="local-card__nombre">Cacao Ritual · Córdoba</div>
+                        <div class="local-card__direccion">
+                            <i class="fa-solid fa-location-dot"></i> Av. Hipólito Yrigoyen 350, Córdoba Capital
+                        </div>
+                        <div class="local-card__meta">
+                            <span><i class="fa-regular fa-clock"></i> Lun–Sáb 9–20h</span>
+                            <span><i class="fa-solid fa-phone"></i> 351 422-7700</span>
+                        </div>
+                    </div>
+
+                    <!-- España -->
+                    <div class="local-card" data-pais="espana" data-lat="40.416775" data-lng="-3.703790" data-map-src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3037.2142706502796!2d-3.70396352322105!3d40.42625405505852!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd422889b75b5dcf%3A0x50c8cbf4855c074e!2sCalle%20de%20Fuencarral%2C%2085%2C%20Centro%2C%2028004%20Madrid%2C%20Espa%C3%B1a!5e0!3m2!1ses!2sar!4v1781220024523!5m2!1ses!2sar">
+                        <span class="local-card__badge" style="background-color: var(--color-secundario); color:#fff;">España</span>
+                        <div class="local-card__nombre">Cacao Ritual · Madrid</div>
+                        <div class="local-card__direccion">
+                            <i class="fa-solid fa-location-dot"></i> Calle Fuencarral 85, 28004 Madrid
+                        </div>
+                        <div class="local-card__meta">
+                            <span><i class="fa-regular fa-clock"></i> Lun–Dom 10–21h</span>
+                            <span><i class="fa-solid fa-phone"></i> +34 91 531-4422</span>
+                        </div>
+                    </div>
+
+                    <div class="local-card" data-pais="espana" data-lat="41.385064" data-lng="2.173403" data-map-src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2993.3004722308724!2d2.1609951768108124!3d41.389280595876635!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4a28d3db1223d%3A0x6c45f5609dc771b6!2sCarrer%20del%20Consell%20de%20Cent%2C%20280%2C%20Eixample%2C%2008007%20Barcelona%2C%20Espa%C3%B1a!5e0!3m2!1ses!2sar!4v1781220213244!5m2!1ses!2sar">
+                        <span class="local-card__badge" style="background-color: var(--color-secundario); color:#fff;">España</span>
+                        <div class="local-card__nombre">Cacao Ritual · Barcelona</div>
+                        <div class="local-card__direccion">
+                            <i class="fa-solid fa-location-dot"></i> Carrer del Consell de Cent 280, 08011 Barcelona
+                        </div>
+                        <div class="local-card__meta">
+                            <span><i class="fa-regular fa-clock"></i> Mar–Dom 10–20h</span>
+                            <span><i class="fa-solid fa-phone"></i> +34 93 451-8800</span>
+                        </div>
+                    </div>
+
+                    <!-- Uruguay -->
+                    <div class="local-card" data-pais="uruguay" data-lat="-34.901112" data-lng="-56.164532" data-map-src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3272.0094294877513!2d-56.18857272311323!3d-34.90621287353861!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x959f81cb82d1dd2f%3A0xce1a736021233c6d!2sAv.%2018%20de%20Julio%201360%2C%2011200%20Montevideo%2C%20Departamento%20de%20Montevideo%2C%20Uruguay!5e0!3m2!1ses!2sar!4v1781220326107!5m2!1ses!2sar">
+                        <span class="local-card__badge" style="background-color: #3d6e4e; color:#fff;">Uruguay</span>
+                        <div class="local-card__nombre">Cacao Ritual · Montevideo</div>
+                        <div class="local-card__direccion">
+                            <i class="fa-solid fa-location-dot"></i> Av. 18 de Julio 1360, Montevideo
+                        </div>
+                        <div class="local-card__meta">
+                            <span><i class="fa-regular fa-clock"></i> Lun–Sáb 9–19h</span>
+                            <span><i class="fa-solid fa-phone"></i> +598 2 900-3344</span>
+                        </div>
+                    </div>
+
+                </div>
+            </aside>
+
+            <!-- ── Mapa ── -->
+            <div class="locales-mapa">
+                <iframe
+                    id="mapa-iframe"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13878946.35!2d-70.97!3d-36.0!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x943a8ce0b8d355ed%3A0x42be98e700b6716b!2sArgentina!5e0!3m2!1ses!2sar!4v1620000000000!5m2!1ses!2sar"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                    title="Mapa de locales Cacao Ritual">
+                </iframe>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="footer">
+        <div class="footer__contenido">
+            <div class="footer__columna">
+                <span class="footer__logo">Cacao Ritual</span>
+                <p class="footer__descripcion">Cacao ritual de origen único, seleccionado con intención. Desde los
+                    productores hasta tu taza, con respeto y trazabilidad.</p>
+                <div class="footer__social">
+                    <a href="https://www.instagram.com/" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://www.youtube.com/" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="https://www.tiktok.com/" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+                </div>
+            </div>
+            <div class="footer__columna">
+                <h4>Navegación</h4>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="tienda.html">Nuestra Tienda</a></li>
+                    <li><a href="tutoriales.html">Tutoriales</a></li>
+                    <li><a href="menu-tienda.html">Nuestro Menú</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="footer__columna">
+                <h4>La empresa</h4>
+                <ul>
+                    <li><a href="franquicias.html">Franquicias</a></li>
+                    <li><a href="trabaja-en-tdc.html">Trabajá con Nosotros</a></li>
+                    <li><a href="#">Términos y condiciones</a></li>
+                    <li><a href="#">Política de privacidad</a></li>
+                </ul>
+            </div>
+            <div class="footer__columna">
+                <h4>Contacto</h4>
+                <ul>
+                    <li><a href="mailto:hola@cacaoritual.com.ar"><i class="fa-regular fa-envelope"></i>
+                            hola@cacaoritual.com.ar</a></li>
+                    <li><a href="tel:+5491150001234"><i class="fa-solid fa-phone"></i> +54 9 11 5000-1234</a></li>
+                    <li><a href="locales.html"><i class="fa-solid fa-location-dot"></i> Encontrá tu local</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer__inferior">
+            <p>&copy; 2026 Cacao Ritual. Todos los derechos reservados.</p>
+            <p>Hecho con <i class="fa-solid fa-heart icono-acento"></i> y mucho cacao</p>
+        </div>
+    </footer>
+
+    <script>
+        // ── Filtro por país ──
+        const cards = document.querySelectorAll('.local-card');
+        const radios = document.querySelectorAll('input[name="pais"]');
+        const buscarInput = document.getElementById('buscar-local');
+
+        function filtrarLocales() {
+            const paisSeleccionado = document.querySelector('input[name="pais"]:checked').value;
+            const termino = buscarInput.value.toLowerCase().trim();
+
+            cards.forEach(card => {
+                const paisCard = card.dataset.pais;
+                const textoCard = card.innerText.toLowerCase();
+                const matchPais = paisSeleccionado === 'todos' || paisCard === paisSeleccionado;
+                const matchTexto = termino === '' || textoCard.includes(termino);
+                card.style.display = (matchPais && matchTexto) ? 'block' : 'none';
+            });
+        }
+
+        radios.forEach(r => r.addEventListener('change', filtrarLocales));
+        buscarInput.addEventListener('input', filtrarLocales);
+
+        // ── Toggle filtro ──
+        document.getElementById('toggle-filtro').addEventListener('click', () => {
+            const opciones = document.getElementById('filtro-opciones');
+            const chevron = document.getElementById('filtro-chevron');
+            const visible = opciones.style.display !== 'none';
+            opciones.style.display = visible ? 'none' : 'flex';
+            chevron.style.transform = visible ? 'rotate(180deg)' : 'rotate(0deg)';
+        });
+
+        // ── Click en local → centrar mapa ──
+        const mapaIframe = document.getElementById('mapa-iframe');
+        cards.forEach(card => {
+            card.addEventListener('click', () => {
+                const mapSrc = card.dataset.mapSrc;
+                if (mapSrc) {
+                    mapaIframe.src = mapSrc;
+                } else {
+                    const lat = card.dataset.lat;
+                    const lng = card.dataset.lng;
+                    const nombre = card.querySelector('.local-card__nombre').textContent.trim();
+                    mapaIframe.src = `https://www.google.com/maps/embed/v1/place?key=AIzaSyD-9tSrke72PouQMnMX-a7eZSW0jkFMBWY&q=${encodeURIComponent(nombre)}&center=${lat},${lng}&zoom=14`;
+                }
+            });
+        });
+
+        // ── GPS ──
+        document.getElementById('btn-gps').addEventListener('click', () => {
+            if (!navigator.geolocation) return alert('Tu navegador no soporta geolocalización.');
+            navigator.geolocation.getCurrentPosition(pos => {
+                const { latitude: lat, longitude: lng } = pos.coords;
+                mapaIframe.src = `https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d5000!2d${lng}!3d${lat}!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sar!4v1620000000000`;
+            }, () => alert('No se pudo obtener tu ubicación.'));
+        });
+    </script>
+
+</body>
+
+</html>

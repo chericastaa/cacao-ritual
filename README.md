@@ -1,6 +1,6 @@
 # Cacao Ritual
 
-Sitio web de tienda de cacao ceremonial, desarrollado como trabajo práctico obligatorio para la materia de Desarrollo Web.
+Sitio web de tienda de cacao ritual, desarrollado como trabajo práctico obligatorio para la materia de Desarrollo Web.
 
 El proyecto es una adaptación temática de [tiendadecafe.com.ar](https://tiendadecafe.com.ar/), clonando su estructura, estilos y navegación con una identidad visual propia centrada en el cacao ceremonial de origen.
 
@@ -17,7 +17,7 @@ Archivo  Descripción
 
 # Estructura de carpetas
 
-cacao-ceremonial/
+cacao-ritual/
 ├── index.html
 ├── tienda.html
 ├── tutoriales.html
@@ -25,8 +25,10 @@ cacao-ceremonial/
 ├── franquicias.html
 ├── trabaja-en-tdc.html
 ├── contacto.html
+├── app.js
 ├── css/
 │   └── styles.css
+│   └── slice.css
 ├── img/
 │   └── (imágenes del sitio)
 └── assets/

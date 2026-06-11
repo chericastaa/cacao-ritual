@@ -78,7 +78,9 @@ a:active {
 /*__________________ BOTONES __________________________*/
 
 .btn {
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     padding: 13px 32px;
     border: none;
     cursor: pointer;
@@ -86,6 +88,7 @@ a:active {
     font-size: 0.85rem;
     font-weight: 600;
     letter-spacing: 1.5px;
+    text-indent: 1.5px; /* compensa el trailing space del letter-spacing */
     text-transform: uppercase;
     transition: var(--transicion);
 }

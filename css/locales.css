@@ -232,3 +232,10 @@
         height: 50vh;
     }
 }
+
+/* ───── Override Navbar para Locales ───── */
+.navbar {
+    background-color: var(--color-primario);
+    position: sticky;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.35);
+}

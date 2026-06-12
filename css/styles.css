@@ -416,6 +416,21 @@ a:active {
     margin: 14px auto;
 }
 
+.titulo-centrado {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.titulo-centrado h2 {
+    margin-bottom: 0 !important;
+}
+
+.titulo-centrado .separador {
+    margin: 14px 0 0 0;
+}
+
 /*__________________TARJETAS DE PRODUCTO____________________________*/
 
 .productos__grid {
@@ -626,38 +641,62 @@ a:active {
     border-bottom: 1px solid rgba(237, 224, 208, 0.3);
 }
 
-.menu__items {
-    display: flex;
-    flex-direction: column;
-    gap: 0;
+.menu__tabla {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    table-layout: fixed;
 }
 
-.menu__item {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    padding: 18px 0;
+.menu__tabla tr {
     border-bottom: 1px solid rgba(237, 224, 208, 0.15);
+    transition: var(--transicion);
+    height: 90px;
 }
 
-.menu__item-info h4 {
-    font-size: 1rem;
-    margin-bottom: 5px;
+.menu__tabla tr:nth-child(even) {
+    background-color: rgba(255, 255, 255, 0.04);
+}
+
+.menu__tabla tr:nth-child(odd) {
+    background-color: transparent;
+}
+
+.menu__tabla tr:hover {
+    background-color: rgba(255, 255, 255, 0.08);
+}
+
+.menu__tabla td {
+    padding: 0 15px;
+    vertical-align: middle;
+    overflow: hidden;
+}
+
+.menu__tabla-info h4 {
+    font-size: 1.1rem;
+    margin-bottom: 4px;
     color: var(--color-claro);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
-.menu__item-info p {
-    font-size: 0.82rem;
-    color: rgba(237, 224, 208, 0.6);
+.menu__tabla-info p {
+    font-size: 0.9rem;
+    color: rgba(237, 224, 208, 0.8);
     font-weight: 300;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
-.menu__item-precio {
+.menu__tabla-precio {
     font-family: var(--fuente-titulo);
-    font-size: 1.15rem;
+    font-size: 1.3rem;
     color: var(--color-acento);
     white-space: nowrap;
-    margin-left: 20px;
+    text-align: right;
+    width: 90px;
 }
 
 /*__________________FORMULARIOS____________________________*/

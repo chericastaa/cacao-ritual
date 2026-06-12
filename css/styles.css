@@ -220,7 +220,7 @@ a:active {
     color: var(--color-acento);
     letter-spacing: 3px;
     text-transform: uppercase;
-    text-shadow: 0 2px 6px rgba(0,0,0,0.4);
+    text-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -240,14 +240,14 @@ a:active {
 
 .navbar__menu li a {
     color: #ffffff;
-    font-size: 1.05rem;
+    font-size: 0.85rem;
     font-weight: 600;
     letter-spacing: 0.8px;
     text-transform: uppercase;
     padding-bottom: 4px;
     border-bottom: 2px solid transparent;
     transition: var(--transicion);
-    text-shadow: 0 2px 6px rgba(0,0,0,0.4);
+    text-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
 }
 
 .navbar__menu li a:hover {
@@ -414,6 +414,11 @@ a:active {
     height: 3px;
     background-color: var(--color-acento);
     margin: 14px auto;
+}
+
+/* Separador alineado al inicio del título (usado dentro de .titulo-centrado) */
+.separador--interno {
+    margin: 10px 0 20px 0;
 }
 
 .titulo-centrado {

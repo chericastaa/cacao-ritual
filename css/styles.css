@@ -1098,6 +1098,83 @@ a:active {
     line-height: 1.7;
 }
 
+/*__________________ LOCALES CTA __________________________*/
+
+.seccion-locales-cta {
+    position: relative;
+    background-image: url('../img/cafe_locales_bg.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 120px 20px;
+    text-align: center;
+    color: var(--color-blanco);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.seccion-locales-cta__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.65);
+    z-index: 1;
+}
+
+.seccion-locales-cta__contenido {
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.seccion-locales-cta__subtitulo {
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+.seccion-locales-cta__titulo {
+    font-size: 4.5rem;
+    font-family: var(--fuente-titulo);
+    color: var(--color-secundario);
+    text-transform: uppercase;
+    margin: 0;
+    line-height: 1;
+}
+
+.seccion-locales-cta__texto {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+}
+
+.btn--locales {
+    background-color: transparent;
+    color: var(--color-blanco);
+    border: 2px solid rgba(255, 255, 255, 0.5);
+}
+
+.btn--locales:hover {
+    border-color: #ffffff;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    color: var(--color-blanco);
+}
+
+.btn--locales:active {
+    background-color: #ffffff;
+    color: #000000;
+    box-shadow: none;
+    border-color: #ffffff;
+}
+
+
 /*________________/ RESPONSIVIDAD /________________*/
 
 /* Tablet horizontal */
@@ -1169,6 +1246,9 @@ a:active {
 
     .formulario__fila { flex-direction: column; gap: 0; }
     .beneficio-card { width: 100%; }
+
+    .seccion-locales-cta__titulo { font-size: 2.5rem; }
+    .seccion-locales-cta__subtitulo { font-size: 1.2rem; }
 }
 
 /* Móvil 1 */

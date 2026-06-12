@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;700&display=swap');
 body {
     margin: 0;
     background-color: #000;
@@ -35,7 +35,7 @@ a {
 
 .carousel .list .item .content {
     position: absolute;
-    top: 20%;
+    top: 35%;
     width: 500px;
     max-width: 80%;
     left: 5%;
@@ -54,15 +54,20 @@ a {
     letter-spacing: 10px;
 }
 
-.carousel .list .item .title,
-.carousel .list .item .topic {
-    font-size: 3.5em;
-    font-weight: bold;
-    line-height: 1.2em;
+.carousel .list .item .title {
+    font-family: 'Oswald', sans-serif;
+    font-size: 3.2em;
+    font-weight: 300;
+    line-height: 1.1em;
 }
 
 .carousel .list .item .topic {
-    color: var(--color-acento);
+    font-family: 'Oswald', sans-serif;
+    font-size: 4.8em;
+    font-weight: 700;
+    line-height: 1.1em;
+    text-transform: uppercase;
+    color: #ffffff;
 }
 
 .carousel .list .item .des {
@@ -281,7 +286,7 @@ a {
         max-width: 90%;
         left: 5%;
         padding: 25px;
-        top: 15%;
+        top: 30%;
     }
 
     .carousel .list .item .author {
@@ -289,10 +294,13 @@ a {
         letter-spacing: 5px;
     }
 
-    .carousel .list .item .title,
+    .carousel .list .item .title {
+        font-size: 2.2em;
+    }
+
     .carousel .list .item .topic {
-        font-size: 2.5em;
-        line-height: 1.2em;
+        font-size: 3em;
+        line-height: 1.1em;
     }
 
     .carousel .list .item .des {

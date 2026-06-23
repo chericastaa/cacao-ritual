@@ -623,6 +623,80 @@ a:active {
     color: var(--color-acento);
 }
 
+/* ============================================================ */
+/* SECCIÓN TUTORIAL - ESTILO GRILLA (2 POR FILA, COMPACTA)     */
+/* ============================================================ */
+
+.seccion-tutorial-zigzag {
+    width: 100%;
+    padding: 60px 5%;
+    background-color: var(--color-claro);
+}
+
+/* Contenedor que agrupa las tarjetas */
+.contenedor-zigzag {
+    max-width: 1100px; 
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px; /* Espacio equilibrado entre las dos columnas */
+    justify-content: center;
+}
+
+/* Cada tarjeta ocupa el 50% del ancho del contenedor */
+.tarjeta-paso {
+    display: flex;
+    flex-direction: column; /* Estilo caja/producto: foto arriba, texto abajo */
+    width: calc(50% - 15px); 
+    background-color: var(--color-blanco);
+    box-shadow: var(--sombra);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+/* Contenedor de la imagen sin altura fija para que NO corte las fotos */
+.tarjeta-paso__imagen {
+    width: 100%;
+    display: block;
+}
+
+/* La imagen mantiene su proporción original intacta */
+.tarjeta-paso__imagen img {
+    width: 100%;
+    height: auto; /* Muestra la foto completa sin recortar nada */
+    display: block;
+}
+
+/* Contenedor del texto con sus espaciados sintonizados */
+.tarjeta-paso__contenido {
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.tarjeta-paso__contenido h3 {
+    font-family: var(--fuente-titulo);
+    font-size: 1.3rem;
+    color: var(--color-primario);
+    margin-bottom: 0;
+}
+
+.tarjeta-paso__contenido p {
+    font-size: 0.92rem;
+    line-height: 1.6;
+    color: #7a5c42;
+}
+
+/* ============================================================ */
+/* RESPONSIVO INTEGRADO: Celulares                             */
+/* ============================================================ */
+@media (max-width: 768px) {
+    .tarjeta-paso {
+        width: 100%; /* En móviles pasa a ocupar todo el ancho, una abajo de otra */
+    }
+}
+
 /*__________________MENÚ DE LA TIENDA____________________________*/
 
 .menu__contenido {

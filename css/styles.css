@@ -687,6 +687,11 @@ a:active {
     line-height: 1.6;
     color: #7a5c42;
 }
+.tarjeta-paso__contenido ul {
+    width: fit-content;
+    margin: 0 auto;
+    text-align: left; /* importante para que el texto quede prolijo */
+}
 
 /* ============================================================ */
 /* RESPONSIVO INTEGRADO: Celulares                             */

@@ -696,6 +696,14 @@ a:active {
     margin: 0 auto;
     text-align: left; /* importante para que el texto quede prolijo */
 }
+.receta h3 {
+    text-align: center;
+    font-family: var(--fuente-titulo);
+    color: var(--color-primario);
+}
+.receta p {
+    text-align: center;
+}
 
 /* ============================================================ */
 /* RESPONSIVO INTEGRADO: Celulares                             */

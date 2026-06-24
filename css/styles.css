@@ -635,48 +635,50 @@ a:active {
 
 /* Contenedor que agrupa las tarjetas */
 .contenedor-pasos {
-    max-width: 1100px; 
+    max-width: 1100px;
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
-    gap: 30px; /* Espacio equilibrado entre las dos columnas */
+    gap: 30px;
     justify-content: center;
-    
+    align-items: stretch; /* las tarjetas de la misma fila se igualan en alto */
 }
 
 /* Cada tarjeta ocupa el 50% del ancho del contenedor */
 .tarjeta-paso {
     display: flex;
-    flex-direction: column; /* Estilo caja/producto: foto arriba, texto abajo */
-    width: calc(50% - 15px); 
+    flex-direction: column;
+    width: calc(50% - 15px);
     background-color: var(--color-blanco);
     box-shadow: var(--sombra);
     border-radius: 8px;
     overflow: hidden;
-     
 }
 
-/* Contenedor de la imagen sin altura fija para que NO corte las fotos */
+/* Contenedor de imagen con altura fija uniforme para todas las tarjetas */
 .tarjeta-paso__imagen {
     width: 100%;
-    display: block;
+    aspect-ratio: 3 / 5; /* proporción retrato, igual a las fotos reales (340×558) */
+    overflow: hidden;
+    line-height: 0;
+    flex-shrink: 0;
 }
 
-/* La imagen mantiene su proporción original intacta */
+/* La imagen cubre el contenedor sin distorsión ni líneas blancas */
 .tarjeta-paso__imagen img {
     width: 100%;
-    height: auto; /* Muestra la foto completa sin recortar nada */
+    height: 100%;
+    object-fit: cover;
     display: block;
-    
 }
 
-/* Contenedor del texto con sus espaciados sintonizados */
+/* Contenedor del texto: crece para igualar el alto entre tarjetas del mismo par */
 .tarjeta-paso__contenido {
     padding: 25px;
     display: flex;
     flex-direction: column;
     gap: 10px;
-    
+    flex-grow: 1; /* ocupa el espacio restante de la tarjeta */
 }
 
 .tarjeta-paso__contenido h3 {

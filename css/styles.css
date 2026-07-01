@@ -549,6 +549,16 @@ a:active {
     flex-wrap: wrap;
     gap: 30px;
     justify-content: center;
+    align-items: stretch;
+       
+}
+
+.tarjeta-tutorial__contenido p {
+    font-size: 0.88rem;
+    color: #7a5c42;
+    margin-bottom: 18px;
+    line-height: 1.6;
+  
 }
 
 .tarjeta-tutorial {
@@ -558,6 +568,7 @@ a:active {
     overflow: hidden;
     transition: var(--transicion);
 }
+
 
 .tarjeta-tutorial:hover {
     transform: translateY(-6px);
@@ -629,7 +640,7 @@ a:active {
 
 .seccion-tutorial-pasos {
     width: 100%;
-    padding: 60px 5%;
+    padding: 40px;
     background-color: var(--color-claro);
 }
 
@@ -694,9 +705,8 @@ a:active {
     color: #7a5c42;
 }
 .tarjeta-paso__contenido ul {
-    width: fit-content;
-    margin: 0 auto;
-    text-align: left; /* importante para que el texto quede prolijo */
+    margin-top: 10px;
+    padding-left: 20px;
 }
 .receta h3 {
     text-align: center;
@@ -706,6 +716,61 @@ a:active {
 .receta p {
     text-align: center;
 }
+.receta ul {
+  max-width: 400px;
+  margin: 0 auto;
+}
+.receta {
+  cursor: pointer;
+  max-width: 1100px;
+  margin: 0 auto 60px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+/* Oculta los pasos en la página; se muestran solo en el modal */
+.receta .seccion-tutorial-pasos {
+  display: none;
+}
+
+/* ===== DECORACIÓN LATERAL RECETAS ===== */
+
+.seccion--recetas {
+    position: relative;
+    overflow: hidden;
+}
+
+.seccion--recetas::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 300px;
+    height: 95%;
+    background-image: url('../img/granos-izquierda.png');
+    background-size: cover;
+    background-position: center;
+    opacity: 1;
+    pointer-events: none;
+    left: 0;
+}
+
+.seccion--recetas::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 300px;
+    height: 95%;
+    background-image: url('../img/granos-derecha.png');
+    background-size: cover;
+    background-position: center;
+    opacity: 1;
+    pointer-events: none;
+    right: 0;
+}
+
 
 /* ============================================================ */
 /* RESPONSIVO INTEGRADO: Celulares                             */
@@ -1604,4 +1669,38 @@ a:active {
     .tarjeta-tutorial {
         width: 100%;
     }
+}
+
+/* ===== MODAL ===== */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.modal-contenido {
+  background: white;
+  padding: 20px;
+  max-width: 800px;
+  width: 90%;
+  max-height: 90vh;
+  overflow-y: auto;
+  border-radius: 10px;
+}
+
+.hidden {
+  display: none;
+}
+
+#cerrarModal {
+  cursor: pointer;
+  font-size: 25px;
+  float: right;
 }
